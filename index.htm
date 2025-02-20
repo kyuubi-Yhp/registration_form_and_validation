@@ -1,15 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Mono:ital,wght@0,200..800;1,200..800&family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/resetstyle.css">
   <link rel="stylesheet" href="css/style.css">
   <title>Form</title>
 </head>
-<body>
-  
 
-  <script src="script/script.js"></script>
+<body>
+
+  <div id="particles-js" class="particles">
+   <div class="box__outside-form">
+      <form action="">
+        <div class="box__form">
+          <div class="box__input">
+            <h1 class="name__in">login in</h1>
+            <input class="input__email" placeholder="email" type="text">
+            <input class="input__password" placeholder="password" type="password">
+            <div class="box__remember">
+              <input class="input__remember" type="radio">
+              <p class="text__remember">Remember password</p>
+              <a href="#">
+                <p class="link__recovery">Forget password</p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </form>
+   </div>
+  </div>
+
+
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.js"></script>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.js"></script>
+  <script defer src="script/particlesMain.js"></script>
+  <script defer src="script/script.js"></script>
 </body>
+
 </html>

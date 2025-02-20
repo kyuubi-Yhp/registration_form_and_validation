@@ -1,0 +1,95 @@
+body {
+  font-family: "IBM Plex Mono", serif;
+  font-weight: 400;
+  font-style: normal;
+background-color: brown;
+}
+
+.particles {
+  height: 100vh;
+position: relative;
+display: flex;
+justify-content: center;
+}
+
+.box__outside-form {
+  position: absolute;
+  width: 500px;
+  height: 500px;
+}
+
+.box__form {
+  margin: 100px auto;
+  width: 500px;
+  height: 500px;
+  border: 1px solid rgba(255, 255, 255, 0.550);
+  border-radius: 30px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  backdrop-filter: blur(5px);
+
+}
+
+.name__in {
+  color: white;
+  font-size: 40px;
+  margin-bottom: 35px;
+  text-align: center;
+}
+
+input {
+  color: white;
+
+  background: transparent;
+  display: block;
+  text-align: center;
+}
+
+input::placeholder {
+  color: rgba(255, 255, 255, 0.250);
+font-size: 15px;
+  text-align: center;
+}
+
+.box__input {
+  margin: 100px 0;
+}
+
+.input__email {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.550);
+  margin-bottom: 40px;
+  width: 300px;
+  height: 30px;
+}
+
+.input__password {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.550);
+  margin-bottom: 60px;
+  width: 300px;
+  height: 30px;
+}
+
+.input__remember {
+}
+
+.box__remember {
+  display: flex;
+  justify-content: space-between;
+}
+
+.text__remember {
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.700);
+  margin-left: -25px;
+}
+
+.link__recovery {
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.700);
+  transition: all 0.3s linear;
+}
+.link__recovery:hover {
+  transform: scale(1.2);
+  color: white;
+}
