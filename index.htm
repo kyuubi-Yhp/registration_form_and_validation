@@ -5,8 +5,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Mono:ital,wght@0,200..800;1,200..800&family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Mono:ital,wght@0,200..800;1,200..800&family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="css/resetstyle.css">
   <link rel="stylesheet" href="css/style.css">
   <title>Form</title>
@@ -15,13 +17,18 @@
 <body>
 
   <div id="particles-js" class="particles">
-   <div class="box__outside-form">
-      <form action="">
+    <div class="box__outside-form">
+      <form action="" id="form" novalidate>
         <div class="box__form">
           <div class="box__input">
             <h1 class="name__in">login in</h1>
-            <input class="input__email" placeholder="email" type="text">
-            <input class="input__password" placeholder="password" type="password">
+            <label class="lable__box" for="">
+              <input class="input__email" maxlength="5" placeholder="email" type="email">
+              <span class="validationEM__true">max lendth = 5 simbol</span>
+            </label>
+            <input class="input__password" minlength="10" maxlength="5" placeholder="password" type="password">
+            <span class="validationPS__true">max lendth 34, min lenght 10</span>
+            <button class="btn__send" type="button">SEND</button>
             <div class="box__remember">
               <input class="input__remember" type="radio">
               <p class="text__remember">Remember password</p>
@@ -32,7 +39,7 @@
           </div>
         </div>
       </form>
-   </div>
+    </div>
   </div>
 
 
